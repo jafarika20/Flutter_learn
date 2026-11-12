@@ -2,6 +2,21 @@ import 'package:flutter/material.dart';
 
 void main() {
   runApp(
-    MaterialApp(home: Center(child: Text('first  text in  flutter app   .')))
+    MaterialApp(
+      home: Scaffold(
+        backgroundColor: Colors.grey,
+        appBar: AppBar(
+          title: Text('Karo Jafari'),
+          backgroundColor: Colors.deepPurple,
+        ),
+        body: Center(
+          child: Image(
+            image: NetworkImage(
+              'https://avatars.githubusercontent.com/u/230221617?v=4',
+            ),
+          ),
+        ),
+      ),
+    ),
   );
 }
